@@ -35,7 +35,7 @@ Ans:A higher-order function is a function that takes another function as an argu
     A callback function is a function that is passed to another function with the expectation that the other function will call it.
 
 3. Can you explain what a closure is and how you used it in the counter function? 
-Ans: When a function reaches outside of its scope into the parent scope to access a variable, can pass things down but can not pass things up. Reusibility is the main point. In counter function
+Ans: When a function reaches outside of its scope into the parent scope to access a variable, can pass things down but can not pass things up. Reusibility is the main point. 
 
 4. Describe the four principles of the 'this' keyword.
 Ans:1.Window Binding : If none of the other rules apply 'this' defaults to the window, the global object in node or   undefined in strict mode. - this happens when we don't give the 'this' keyword any context.

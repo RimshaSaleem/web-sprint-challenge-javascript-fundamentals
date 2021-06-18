@@ -17,6 +17,8 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
+// Ans: Nested function can access internal variable because the variable has function level scope and closure give ability to nested function to access variable outside of its function. And therefore Nested functions have access to data ("I'm outside the function"); outside of their scope.
+
 
 
 
