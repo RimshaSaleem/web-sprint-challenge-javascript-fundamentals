@@ -28,9 +28,12 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(array) {
+let result = 0;
+  for(let i=1;i<=array;i++){
+    result+=i;
+  }
+  return result;
   }
  
 
@@ -55,10 +58,16 @@ const zooAnimals = [
   Use animalNames to populate and return the displayNames array with only the animal name and scientific name of each animal. 
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
+  
+  function animalNames(){
+    let result =[];
+    zooAnimals.forEach(function(item){
+      result.push(`name: ${item. animal_name}, scientific: ${item.scientific_name}`)
+    });
+    return result;
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
   }
+  console.log(animalNames())
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -67,9 +76,15 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(){
+    
+      let result=zooAnimals.map(function(item){
+        return item.animal_name.toLowerCase()
+      });
+      return result;
   }
+  console.log(lowerCaseNames())
+  
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -77,10 +92,16 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+  function lowPopulationAnimals(){
+    let result=zooAnimals.filter(function(item){
+     return item.population < 5;
+
+
+      })
+      return result;
   
+    }
+    console.log(lowPopulationAnimals());
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
